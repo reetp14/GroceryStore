@@ -160,7 +160,6 @@ export default function SignInSide() {
             {/* <Link href="/[title]" as={"home"}> */}
             <Button
               type="submit"
-              fullWidth
               variant="contained"
               color="secondary"
               className={classes.submit}
