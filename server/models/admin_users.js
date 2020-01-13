@@ -1,6 +1,4 @@
-var db = require(".");
-
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   {
     var admin_users = sequelize.define("admin_users", {
       id: {
