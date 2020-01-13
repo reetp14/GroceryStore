@@ -41,10 +41,15 @@
     "tableify": "^1.1.0",
     "tracer": "^1.0.1",
     "tubular-react": "^4.0.4",
-    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@svgr/webpack": "^5.0.1",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^2.0.2",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.5"
   }
 }

@@ -25,6 +25,7 @@ import { mainListItems, secondaryListItems } from "../components/listItems";
 import Copyright from "../components/Copyright";
 import MuiTable from "../components/muitable";
 import Popup from "../components/Popup";
+import MyImage from "../components/image";
 
 const drawerWidth = 240;
 
@@ -65,6 +66,11 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1
+  },
+
+  title2: {
+    flexGrow: 1.5,
+    marginLeft: 10
   },
   drawerPaper: {
     position: "relative",
@@ -112,7 +118,7 @@ export default function Dashboard(props) {
     return [user.fname, user.lname, user.phoneNo, user.emailId];
   });
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -150,6 +156,10 @@ export default function Dashboard(props) {
             className={classes.title}
           >
             Dashboard
+          </Typography>
+          <MyImage />
+          <Typography className={classes.title2} variant="h6" noWrap>
+            WakeAppFresh
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">

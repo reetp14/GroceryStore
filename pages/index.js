@@ -162,6 +162,7 @@ export default function SignInSide() {
               type="submit"
               variant="contained"
               color="secondary"
+              fullWidth="true"
               className={classes.submit}
               onClick={event => {
                 console.log("clicked");
